@@ -1,0 +1,27 @@
+﻿.form-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: minmax(15%, 25%) minmax(65%, 75%);
+    grid-gap: 1.5rem;
+
+    align-items:center;
+}
+.form-container > div > label {
+    font-size:1.4rem;
+    font-weight:600;
+}
+
+@media only screen and (max-width:650px) {
+    .form-container {
+        display: grid;
+        width: 100%;
+        grid-gap: .5rem;
+        grid-template-columns: 1fr;
+    }
+
+        .form-container > div > label{
+            display:inline-block;
+            margin-top:1.5rem;
+        }
+}
+
